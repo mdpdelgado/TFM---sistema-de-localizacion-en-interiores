@@ -1,21 +1,16 @@
-## OpenHPS: Server Example (4)
-This is a simple example of how to set up a server that uses OpenHPS. The example creates an additional endpoint for storing data and also
-uses clustering to offer multiple services listening on the same port.
+## 4-server-modificado-3
+Se basa en el siguiente ejemplo propicionado por Maxim Van de Wynckel (https://github.com/Maximvdw/openhps-examples-2021/tree/main/4-server).
+Utiliza Node.js. Funciona en conjunto con 5-client-modificado-5.
 
-### What will you learn?
-- Set up a basic server that uses OpenHPS
-- Set up a data service that stores `BLEObject`s in memory
-- Set up a socket connection on port 3000
-- Set up a multilateration positioning algorithm
+- Es un servidor básico que usa OpenHPS
+- Almacena los BLEObject en memoria
+- Utiliza el algoritmo de multilateración
 
-### What will you not learn?
-- Authorization of the socket server (any client can access it)
+### Funcionalidades añadidas
+- Devuelve la posición calculada al cliente
 
-### Installation
-1. Clone the repository
-2. Run `npm install` to install the dependencies
-    - We use `@openhps/core`, `@openhps/socket` and `@openhps/rf` as the OpenHPS modules
-    - Alternatively you may replace the socket module with `@openhps/rest`
+### Instalación y ejecución
+1. Clonar el repositorio
+2. Ejecutar `npm install` para instalar las dependencias
+3. Ejecutar `npm start` para arrancar el servidor
 
-### Testing
-Once you have set-up the server, you can test it using the client notebook example.

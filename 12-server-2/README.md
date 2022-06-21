@@ -1,7 +1,19 @@
-## OpenHPS: Server Example (12)
-This server example is based on the IPIN 2021 paper. It is a simplified version. Use Client (11) to test the online stage.
-The difference with server example (10) is the use of MongoDB.
+## 12-server-2
+Se basa en el siguiente ejemplo propicionado por Maxim Van de Wynckel (https://github.com/Maximvdw/openhps-examples-2021/tree/main/12-server).
+Utiliza Node.js. Funciona en conjunto con la app offline y la app online.
 
-## Usage
-1. Start a MongoDB server (I've added a docker-compose example that will expose one at localhost:27017)
-2. Start the app
+- Servidor con parte offline para recoger los datos de entrenamiento para fingerprint y parte online para calcular la posición
+- Es un servidor que cuenta con una conexión con la base de datos que guarda las posiciones de las balizas, los fingerprints y la posición calculada
+- Algortimos de fingerprint y multilateración
+
+### Funcionalidades añadidas
+- Adaptación de las balizas utilizadas en el escenario de pruebas
+- Adaptación a la base de datos propia
+- Guardado de la posición calculada (parte online) en un fichero csv
+- Guardado de la posición calculada (parte online) en la base de datos MongoDB
+
+### Instalación y ejecución
+1. Clonar el repositorio
+2. Ejecutar `npm install` para instalar las dependencias
+3. Arracar la base de datos MongoDB
+4. Ejecutar `npm start` para arrancar el servidor
