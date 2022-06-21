@@ -8,7 +8,7 @@ Funciona en conjunto con 10-server-1, 12-server-1 y 12-server-2.
 - Adaptación de las balizas utilizadas en el escenario de pruebas
 - Adaptación al mapa de pruebas: cambio del mapa, cambio de las dimensiones del mapa y cambio de los puntos de entrenamiento representados.
 
-## Requisitos
+### Requisitos
 - Android SDK
 - Android build-tools 32.0.0 (Android/build.gradle)
 

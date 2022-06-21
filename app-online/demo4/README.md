@@ -11,7 +11,7 @@ Funciona en conjunto con 10-server-1, 12-server-1 y 12-server-2.
 - Eliminación del envío de la posición desde la app, para dejar que el servidor se encargue de calcularla
 - Adaptación al mapa de pruebas: cambio del mapa, cambio de las dimensiones del mapa y cambio de los puntos de prueba representados.
 
-## Requisitos
+### Requisitos
 - Android SDK
 - Android build-tools 32.0.0 (Android/build.gradle)
 
